@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323084921E7AF20C002E1D8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084911E7AF20C002E1D8F /* main.m */; };
+		323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084941E7AF20C002E1D8F /* AppDelegate.m */; };
+		323084981E7AF20C002E1D8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084971E7AF20C002E1D8F /* ViewController.m */; };
+		3230849B1E7AF20C002E1D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323084991E7AF20C002E1D8F /* Main.storyboard */; };
+		3230849E1E7AF20C002E1D8F /* Clozbz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3230849C1E7AF20C002E1D8F /* Clozbz.xcdatamodeld */; };
+		323084A01E7AF20C002E1D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3230849F1E7AF20C002E1D8F /* Assets.xcassets */; };
+		323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */; };
+		323084AE1E7AF20D002E1D8F /* ClozbzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084AD1E7AF20D002E1D8F /* ClozbzTests.m */; };
+		323084B91E7AF20D002E1D8F /* ClozbzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084B81E7AF20D002E1D8F /* ClozbzUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323084AA1E7AF20D002E1D8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323084851E7AF208002E1D8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3230848C1E7AF208002E1D8F;
+			remoteInfo = Clozbz;
+		};
+		323084B51E7AF20D002E1D8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323084851E7AF208002E1D8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3230848C1E7AF208002E1D8F;
+			remoteInfo = Clozbz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3230848D1E7AF20C002E1D8F /* Clozbz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clozbz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323084911E7AF20C002E1D8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		323084931E7AF20C002E1D8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		323084941E7AF20C002E1D8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		323084961E7AF20C002E1D8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		323084971E7AF20C002E1D8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3230849A1E7AF20C002E1D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3230849D1E7AF20C002E1D8F /* Clozbz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clozbz.xcdatamodel; sourceTree = "<group>"; };
+		3230849F1E7AF20C002E1D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323084A21E7AF20C002E1D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		323084A41E7AF20C002E1D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323084A91E7AF20D002E1D8F /* ClozbzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClozbzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323084AD1E7AF20D002E1D8F /* ClozbzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClozbzTests.m; sourceTree = "<group>"; };
+		323084AF1E7AF20D002E1D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323084B41E7AF20D002E1D8F /* ClozbzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClozbzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323084B81E7AF20D002E1D8F /* ClozbzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClozbzUITests.m; sourceTree = "<group>"; };
+		323084BA1E7AF20D002E1D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3230848A1E7AF208002E1D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084A61E7AF20D002E1D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084B11E7AF20D002E1D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323084841E7AF208002E1D8F = {
+			isa = PBXGroup;
+			children = (
+				3230848F1E7AF20C002E1D8F /* Clozbz */,
+				323084AC1E7AF20D002E1D8F /* ClozbzTests */,
+				323084B71E7AF20D002E1D8F /* ClozbzUITests */,
+				3230848E1E7AF20C002E1D8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3230848E1E7AF20C002E1D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3230848D1E7AF20C002E1D8F /* Clozbz.app */,
+				323084A91E7AF20D002E1D8F /* ClozbzTests.xctest */,
+				323084B41E7AF20D002E1D8F /* ClozbzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3230848F1E7AF20C002E1D8F /* Clozbz */ = {
+			isa = PBXGroup;
+			children = (
+				323084931E7AF20C002E1D8F /* AppDelegate.h */,
+				323084941E7AF20C002E1D8F /* AppDelegate.m */,
+				323084961E7AF20C002E1D8F /* ViewController.h */,
+				323084971E7AF20C002E1D8F /* ViewController.m */,
+				323084991E7AF20C002E1D8F /* Main.storyboard */,
+				3230849F1E7AF20C002E1D8F /* Assets.xcassets */,
+				323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */,
+				323084A41E7AF20C002E1D8F /* Info.plist */,
+				3230849C1E7AF20C002E1D8F /* Clozbz.xcdatamodeld */,
+				323084901E7AF20C002E1D8F /* Supporting Files */,
+			);
+			path = Clozbz;
+			sourceTree = "<group>";
+		};
+		323084901E7AF20C002E1D8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				323084911E7AF20C002E1D8F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323084AC1E7AF20D002E1D8F /* ClozbzTests */ = {
+			isa = PBXGroup;
+			children = (
+				323084AD1E7AF20D002E1D8F /* ClozbzTests.m */,
+				323084AF1E7AF20D002E1D8F /* Info.plist */,
+			);
+			path = ClozbzTests;
+			sourceTree = "<group>";
+		};
+		323084B71E7AF20D002E1D8F /* ClozbzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				323084B81E7AF20D002E1D8F /* ClozbzUITests.m */,
+				323084BA1E7AF20D002E1D8F /* Info.plist */,
+			);
+			path = ClozbzUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3230848C1E7AF208002E1D8F /* Clozbz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323084BD1E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "Clozbz" */;
+			buildPhases = (
+				323084891E7AF208002E1D8F /* Sources */,
+				3230848A1E7AF208002E1D8F /* Frameworks */,
+				3230848B1E7AF208002E1D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clozbz;
+			productName = Clozbz;
+			productReference = 3230848D1E7AF20C002E1D8F /* Clozbz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323084A81E7AF20D002E1D8F /* ClozbzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323084C01E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzTests" */;
+			buildPhases = (
+				323084A51E7AF20D002E1D8F /* Sources */,
+				323084A61E7AF20D002E1D8F /* Frameworks */,
+				323084A71E7AF20D002E1D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323084AB1E7AF20D002E1D8F /* PBXTargetDependency */,
+			);
+			name = ClozbzTests;
+			productName = ClozbzTests;
+			productReference = 323084A91E7AF20D002E1D8F /* ClozbzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		323084B31E7AF20D002E1D8F /* ClozbzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323084C31E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzUITests" */;
+			buildPhases = (
+				323084B01E7AF20D002E1D8F /* Sources */,
+				323084B11E7AF20D002E1D8F /* Frameworks */,
+				323084B21E7AF20D002E1D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323084B61E7AF20D002E1D8F /* PBXTargetDependency */,
+			);
+			name = ClozbzUITests;
+			productName = ClozbzUITests;
+			productReference = 323084B41E7AF20D002E1D8F /* ClozbzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323084851E7AF208002E1D8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sai;
+				TargetAttributes = {
+					3230848C1E7AF208002E1D8F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					323084A81E7AF20D002E1D8F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3230848C1E7AF208002E1D8F;
+					};
+					323084B31E7AF20D002E1D8F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3230848C1E7AF208002E1D8F;
+					};
+				};
+			};
+			buildConfigurationList = 323084881E7AF208002E1D8F /* Build configuration list for PBXProject "Clozbz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323084841E7AF208002E1D8F;
+			productRefGroup = 3230848E1E7AF20C002E1D8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3230848C1E7AF208002E1D8F /* Clozbz */,
+				323084A81E7AF20D002E1D8F /* ClozbzTests */,
+				323084B31E7AF20D002E1D8F /* ClozbzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3230848B1E7AF208002E1D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */,
+				323084A01E7AF20C002E1D8F /* Assets.xcassets in Resources */,
+				3230849B1E7AF20C002E1D8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084A71E7AF20D002E1D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084B21E7AF20D002E1D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323084891E7AF208002E1D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323084981E7AF20C002E1D8F /* ViewController.m in Sources */,
+				323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */,
+				323084921E7AF20C002E1D8F /* main.m in Sources */,
+				3230849E1E7AF20C002E1D8F /* Clozbz.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084A51E7AF20D002E1D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323084AE1E7AF20D002E1D8F /* ClozbzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323084B01E7AF20D002E1D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323084B91E7AF20D002E1D8F /* ClozbzUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323084AB1E7AF20D002E1D8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3230848C1E7AF208002E1D8F /* Clozbz */;
+			targetProxy = 323084AA1E7AF20D002E1D8F /* PBXContainerItemProxy */;
+		};
+		323084B61E7AF20D002E1D8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3230848C1E7AF208002E1D8F /* Clozbz */;
+			targetProxy = 323084B51E7AF20D002E1D8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323084991E7AF20C002E1D8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3230849A1E7AF20C002E1D8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323084A21E7AF20C002E1D8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323084BB1E7AF20D002E1D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		323084BC1E7AF20D002E1D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323084BE1E7AF20D002E1D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clozbz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		323084BF1E7AF20D002E1D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clozbz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		323084C11E7AF20D002E1D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClozbzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.ClozbzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clozbz.app/Clozbz";
+			};
+			name = Debug;
+		};
+		323084C21E7AF20D002E1D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClozbzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.ClozbzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clozbz.app/Clozbz";
+			};
+			name = Release;
+		};
+		323084C41E7AF20D002E1D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClozbzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.ClozbzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Clozbz;
+			};
+			name = Debug;
+		};
+		323084C51E7AF20D002E1D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClozbzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSK.ClozbzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Clozbz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323084881E7AF208002E1D8F /* Build configuration list for PBXProject "Clozbz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323084BB1E7AF20D002E1D8F /* Debug */,
+				323084BC1E7AF20D002E1D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323084BD1E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "Clozbz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323084BE1E7AF20D002E1D8F /* Debug */,
+				323084BF1E7AF20D002E1D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		323084C01E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323084C11E7AF20D002E1D8F /* Debug */,
+				323084C21E7AF20D002E1D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		323084C31E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323084C41E7AF20D002E1D8F /* Debug */,
+				323084C51E7AF20D002E1D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3230849C1E7AF20C002E1D8F /* Clozbz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3230849D1E7AF20C002E1D8F /* Clozbz.xcdatamodel */,
+			);
+			currentVersion = 3230849D1E7AF20C002E1D8F /* Clozbz.xcdatamodel */;
+			path = Clozbz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 323084851E7AF208002E1D8F /* Project object */;
+}
