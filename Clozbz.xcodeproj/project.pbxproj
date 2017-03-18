@@ -16,6 +16,10 @@
 		323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */; };
 		323084AE1E7AF20D002E1D8F /* ClozbzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084AD1E7AF20D002E1D8F /* ClozbzTests.m */; };
 		323084B91E7AF20D002E1D8F /* ClozbzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084B81E7AF20D002E1D8F /* ClozbzUITests.m */; };
+		323084C71E7AFC7E002E1D8F /* login_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 323084C61E7AFC7E002E1D8F /* login_bg.jpg */; };
+		323084CA1E7AFDAB002E1D8F /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */; };
+		323084D41E7B06C3002E1D8F /* Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084D21E7B06C3002E1D8F /* Registration.m */; };
+		323084D51E7B06C3002E1D8F /* Registration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323084D31E7B06C3002E1D8F /* Registration.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		323084B41E7AF20D002E1D8F /* ClozbzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClozbzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323084B81E7AF20D002E1D8F /* ClozbzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClozbzUITests.m; sourceTree = "<group>"; };
 		323084BA1E7AF20D002E1D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323084C61E7AFC7E002E1D8F /* login_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_bg.jpg; sourceTree = "<group>"; };
+		323084C81E7AFDAB002E1D8F /* UIFloatLabelTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextField.h; sourceTree = "<group>"; };
+		323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextField.m; sourceTree = "<group>"; };
+		323084D11E7B06C3002E1D8F /* Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registration.h; sourceTree = "<group>"; };
+		323084D21E7B06C3002E1D8F /* Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registration.m; sourceTree = "<group>"; };
+		323084D31E7B06C3002E1D8F /* Registration.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Registration.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +113,16 @@
 		3230848F1E7AF20C002E1D8F /* Clozbz */ = {
 			isa = PBXGroup;
 			children = (
+				323084C61E7AFC7E002E1D8F /* login_bg.jpg */,
+				323084CB1E7AFDB1002E1D8F /* Frameworks */,
 				323084931E7AF20C002E1D8F /* AppDelegate.h */,
 				323084941E7AF20C002E1D8F /* AppDelegate.m */,
 				323084961E7AF20C002E1D8F /* ViewController.h */,
 				323084971E7AF20C002E1D8F /* ViewController.m */,
 				323084991E7AF20C002E1D8F /* Main.storyboard */,
+				323084D11E7B06C3002E1D8F /* Registration.h */,
+				323084D21E7B06C3002E1D8F /* Registration.m */,
+				323084D31E7B06C3002E1D8F /* Registration.xib */,
 				3230849F1E7AF20C002E1D8F /* Assets.xcassets */,
 				323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */,
 				323084A41E7AF20C002E1D8F /* Info.plist */,
@@ -141,6 +156,15 @@
 				323084BA1E7AF20D002E1D8F /* Info.plist */,
 			);
 			path = ClozbzUITests;
+			sourceTree = "<group>";
+		};
+		323084CB1E7AFDB1002E1D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323084C81E7AFDAB002E1D8F /* UIFloatLabelTextField.h */,
+				323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +234,7 @@
 				TargetAttributes = {
 					3230848C1E7AF208002E1D8F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y959Y84N4C;
 						ProvisioningStyle = Automatic;
 					};
 					323084A81E7AF20D002E1D8F = {
@@ -249,7 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323084C71E7AFC7E002E1D8F /* login_bg.jpg in Resources */,
 				323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */,
+				323084D51E7B06C3002E1D8F /* Registration.xib in Resources */,
 				323084A01E7AF20C002E1D8F /* Assets.xcassets in Resources */,
 				3230849B1E7AF20C002E1D8F /* Main.storyboard in Resources */,
 			);
@@ -278,6 +305,8 @@
 			files = (
 				323084981E7AF20C002E1D8F /* ViewController.m in Sources */,
 				323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */,
+				323084D41E7B06C3002E1D8F /* Registration.m in Sources */,
+				323084CA1E7AFDAB002E1D8F /* UIFloatLabelTextField.m in Sources */,
 				323084921E7AF20C002E1D8F /* main.m in Sources */,
 				3230849E1E7AF20C002E1D8F /* Clozbz.xcdatamodeld in Sources */,
 			);
@@ -426,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y959Y84N4C;
 				INFOPLIST_FILE = Clozbz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
@@ -437,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y959Y84N4C;
 				INFOPLIST_FILE = Clozbz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
