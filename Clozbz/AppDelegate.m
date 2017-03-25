@@ -7,19 +7,133 @@
 //
 
 #import "AppDelegate.h"
+@import Firebase;
+@import GoogleSignIn;
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    tag=YES;
+    [FIRApp configure];
+    
+    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+    [GIDSignIn sharedInstance].delegate = self;
+    // Return successful Facebook SDK Install
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
+- (BOOL)application:(nonnull UIApplication *)application
+            openURL:(nonnull NSURL *)url
+            options:(nonnull NSDictionary<NSString *, id> *)options
+{
+    NSString *url_str=[NSString stringWithFormat:@"%@",url];
+    if ([url_str containsString:@"fb"])
+    {
+        return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                              openURL:url
+                                                    sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                                           annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+      
+    }
+    else
+        return [[GIDSignIn sharedInstance] handleURL:url
+                                   sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                          annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
+
+//For your app to run on iOS 8 and older, also implement the deprecated application:openURL:sourceApplication:annotation: method.
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    NSString *url_str=[NSString stringWithFormat:@"%@",url];
+    if ([url_str containsString:@"fb"])
+    {
+        BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                      openURL:url
+                                                            sourceApplication:sourceApplication
+                                                                   annotation:annotation
+                        ];
+        // Add any custom logic here.
+        return handled;
+    }
+    else
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:sourceApplication
+                                      annotation:annotation];
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    if (error == nil)
+    {
+        if (tag ==YES)
+        {
+            tag=NO;
+            [[GIDSignIn sharedInstance] signIn];
+        }
+        else
+        {
+            GIDAuthentication *authentication = user.authentication;
+            FIRAuthCredential *credential =
+            [FIRGoogleAuthProvider credentialWithIDToken:authentication.idToken
+                                             accessToken:authentication.accessToken];
+            
+            // ...
+            // Perform any operations on signed in user here.
+            NSString *userId = user.userID;
+            // For client-side use only!
+            NSString *idToken = user.authentication.idToken;
+            // Safe to send to the server
+            NSString *fullName = user.profile.name;
+            NSString *givenName = user.profile.givenName;
+            NSString *familyName = user.profile.familyName;
+            NSString *email = user.profile.email;
+            
+            [[FIRAuth auth] signInWithCredential:credential
+                                      completion:^(FIRUser *user, NSError *error)
+             {
+                 // ...
+                 if (error)
+                 {
+                     // ...
+                     NSLog(@"%@",error);
+                 }
+                 else
+                 {
+                     NSLog(@"%@",user.uid);
+                     
+                     Dashboard_page *menuController  =[[Dashboard_page alloc]initWithNibName:@"Dashboard_page" bundle:nil];
+                     UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:menuController];
+                     self.window.rootViewController =nil;
+                     self.window.rootViewController = navigationController;
+                     [self.window makeKeyAndVisible];
+
+                 }
+             }];
+
+        }
+    }
+    
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    // Perform any operations when the user disconnects from app here.
+    // ...
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

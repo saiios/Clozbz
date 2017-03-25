@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "UIFloatLabelTextField.h"
 #import "ViewController.h"
+#import "CRToastView.h"
+#import "YLGIFImage.h"
+#import "YLImageView.h"
+@import Firebase;
 
 @interface Registration : UIViewController
 @property (weak, nonatomic) IBOutlet UIFloatLabelTextField *username;
@@ -18,5 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIFloatLabelTextField *confirm_password;
 - (IBAction)submit_click:(id)sender;
 - (IBAction)login_click:(id)sender;
+@property (strong, nonatomic) IBOutlet YLImageView *Loading;
 
 @end

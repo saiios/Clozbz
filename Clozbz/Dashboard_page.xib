@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Dashboard_page">
+            <connections>
+                <outlet property="Loading" destination="kWj-mM-3Y6" id="u1I-H6-bJH"/>
+                <outlet property="location_view" destination="Bmg-QZ-wLT" id="cn7-zD-ZWC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zipcode_tf" destination="qId-VP-dj1" id="UdS-TQ-9Gk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmg-QZ-wLT">
+                    <rect key="frame" x="97.5" y="50" width="180" height="70"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VN0-2w-0av">
+                            <rect key="frame" x="74.5" y="8" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="A4K-nY-M99"/>
+                                <constraint firstAttribute="height" constant="30" id="qdh-EY-AeX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkF-4Y-HXa">
+                            <rect key="frame" x="10" y="41" width="160" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Tro-mJ-xbK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="7nt-q6-KDJ"/>
+                        <constraint firstItem="HkF-4Y-HXa" firstAttribute="leading" secondItem="Bmg-QZ-wLT" secondAttribute="leading" constant="10" id="8B4-aa-7cz"/>
+                        <constraint firstAttribute="bottom" secondItem="HkF-4Y-HXa" secondAttribute="bottom" constant="8" id="LhF-xV-a7F"/>
+                        <constraint firstAttribute="height" constant="70" id="R7H-dJ-rhL"/>
+                        <constraint firstAttribute="trailing" secondItem="HkF-4Y-HXa" secondAttribute="trailing" constant="10" id="U7b-7u-cMm"/>
+                        <constraint firstItem="VN0-2w-0av" firstAttribute="top" secondItem="Bmg-QZ-wLT" secondAttribute="top" constant="8" id="ZY1-4V-UWc"/>
+                        <constraint firstItem="VN0-2w-0av" firstAttribute="centerX" secondItem="Bmg-QZ-wLT" secondAttribute="centerX" id="pzS-LS-3wI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zipcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hd-Y8-NLy">
+                    <rect key="frame" x="10" y="140" width="355" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6vg-08-b4R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ZipCode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qId-VP-dj1">
+                    <rect key="frame" x="97.5" y="201" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ify-8l-l1l"/>
+                        <constraint firstAttribute="width" constant="180" id="uDE-aJ-uFp"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eTo-Cw-2de"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4S-6Z-ju2">
+                    <rect key="frame" x="137" y="261" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="2yN-2V-rGQ"/>
+                        <constraint firstAttribute="height" constant="30" id="cdP-a0-Isj"/>
+                    </constraints>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit_click:" destination="-1" eventType="touchUpInside" id="tWu-72-JLu"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_players.gif" translatesAutoresizingMaskIntoConstraints="NO" id="kWj-mM-3Y6" customClass="YLImageView">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3qf-OH-6yu"/>
+                        <constraint firstAttribute="width" constant="100" id="MLD-9Q-kYT"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9hd-Y8-NLy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="05p-ce-616"/>
+                <constraint firstItem="qId-VP-dj1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IbX-hL-J7b"/>
+                <constraint firstItem="o4S-6Z-ju2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SNW-1P-2Y7"/>
+                <constraint firstItem="9hd-Y8-NLy" firstAttribute="top" secondItem="Bmg-QZ-wLT" secondAttribute="bottom" constant="20" id="ZTK-wa-Wnb"/>
+                <constraint firstItem="Bmg-QZ-wLT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="aeW-Cw-cjL"/>
+                <constraint firstItem="o4S-6Z-ju2" firstAttribute="top" secondItem="qId-VP-dj1" secondAttribute="bottom" constant="30" id="bN6-AZ-cXk"/>
+                <constraint firstItem="qId-VP-dj1" firstAttribute="top" secondItem="9hd-Y8-NLy" secondAttribute="bottom" constant="40" id="d6T-dF-O0q"/>
+                <constraint firstItem="Bmg-QZ-wLT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gOi-vh-fJ2"/>
+                <constraint firstItem="kWj-mM-3Y6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mpl-r5-Gsc"/>
+                <constraint firstItem="kWj-mM-3Y6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="osI-fF-NYg"/>
+                <constraint firstAttribute="trailing" secondItem="9hd-Y8-NLy" secondAttribute="trailing" constant="10" id="tnc-fo-Crf"/>
+            </constraints>
+            <point key="canvasLocation" x="47.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loading_players.gif" width="200" height="200"/>
+        <image name="login_bg.jpg" width="640" height="960"/>
+    </resources>
+</document>

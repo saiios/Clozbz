@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Registration">
             <connections>
+                <outlet property="Loading" destination="KNQ-Xo-dNL" id="8Vw-Vg-EIs"/>
                 <outlet property="confirm_password" destination="y01-q0-LPl" id="3zk-YR-H1e"/>
                 <outlet property="email" destination="9lB-JD-aYI" id="Yrt-vd-vMp"/>
                 <outlet property="password" destination="z8i-n2-fdW" id="Xpj-OK-waf"/>
@@ -170,6 +171,13 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_players.gif" translatesAutoresizingMaskIntoConstraints="NO" id="KNQ-Xo-dNL" customClass="YLImageView">
+                    <rect key="frame" x="137" y="283.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Ohf-9p-F4b"/>
+                        <constraint firstAttribute="width" constant="100" id="tdH-cl-2Fa"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -179,6 +187,7 @@
                 <constraint firstAttribute="trailing" secondItem="x7T-Ah-Klh" secondAttribute="trailing" constant="20" id="3Jg-d2-vuw"/>
                 <constraint firstItem="qvl-nY-qLH" firstAttribute="top" secondItem="SHy-XM-9ol" secondAttribute="bottom" constant="50" id="5ZL-Hf-mig"/>
                 <constraint firstItem="9lB-JD-aYI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Fh5-5I-i2v"/>
+                <constraint firstItem="KNQ-Xo-dNL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Fhn-lm-acR"/>
                 <constraint firstAttribute="trailing" secondItem="joy-JE-8Eo" secondAttribute="trailing" id="Fux-M9-r1n"/>
                 <constraint firstItem="Jsp-kO-fkq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Hme-aK-24P"/>
                 <constraint firstItem="nZW-uT-caZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="L9V-G0-v7H"/>
@@ -195,6 +204,7 @@
                 <constraint firstAttribute="trailing" secondItem="z8i-n2-fdW" secondAttribute="trailing" constant="20" id="ciu-UN-wV2"/>
                 <constraint firstAttribute="bottom" secondItem="joy-JE-8Eo" secondAttribute="bottom" id="e9Q-XU-JGl"/>
                 <constraint firstAttribute="trailing" secondItem="3Ta-AR-Zgn" secondAttribute="trailing" constant="20" id="iWW-Af-l8j"/>
+                <constraint firstItem="KNQ-Xo-dNL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jyH-v0-Okw"/>
                 <constraint firstItem="x7T-Ah-Klh" firstAttribute="top" secondItem="5ps-5O-1Rx" secondAttribute="bottom" constant="8" id="kFq-D3-NfS"/>
                 <constraint firstItem="YeS-fC-C9h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lW5-nu-LgT"/>
                 <constraint firstItem="z8i-n2-fdW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lki-A8-gEh"/>
@@ -216,6 +226,7 @@
         </view>
     </objects>
     <resources>
+        <image name="loading_players.gif" width="200" height="200"/>
         <image name="login_bg.jpg" width="640" height="960"/>
     </resources>
 </document>

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120FF3BE1B615B8459AC6693 /* libPods-ClozbzUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D15A169B02E9E7DB100D5EC /* libPods-ClozbzUITests.a */; };
+		32089FB91E7D5C67009B3F87 /* CRToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FAF1E7D5C66009B3F87 /* CRToastConfig.m */; };
+		32089FBA1E7D5C67009B3F87 /* CRToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FB21E7D5C66009B3F87 /* CRToastManager.m */; };
+		32089FBB1E7D5C67009B3F87 /* CRToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FB41E7D5C66009B3F87 /* CRToastView.m */; };
+		32089FBC1E7D5C67009B3F87 /* CRToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FB61E7D5C66009B3F87 /* CRToastViewController.m */; };
+		32089FBD1E7D5C67009B3F87 /* CRToastWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FB81E7D5C66009B3F87 /* CRToastWindow.m */; };
+		32089FC01E7D6508009B3F87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32089FBF1E7D6508009B3F87 /* GoogleService-Info.plist */; };
+		32089FC41E7D94FA009B3F87 /* Dashboard_page.m in Sources */ = {isa = PBXBuildFile; fileRef = 32089FC21E7D94FA009B3F87 /* Dashboard_page.m */; };
+		32089FC51E7D94FA009B3F87 /* Dashboard_page.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32089FC31E7D94FA009B3F87 /* Dashboard_page.xib */; };
 		323084921E7AF20C002E1D8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084911E7AF20C002E1D8F /* main.m */; };
 		323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084941E7AF20C002E1D8F /* AppDelegate.m */; };
 		323084981E7AF20C002E1D8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084971E7AF20C002E1D8F /* ViewController.m */; };
@@ -20,6 +29,17 @@
 		323084CA1E7AFDAB002E1D8F /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */; };
 		323084D41E7B06C3002E1D8F /* Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = 323084D21E7B06C3002E1D8F /* Registration.m */; };
 		323084D51E7B06C3002E1D8F /* Registration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323084D31E7B06C3002E1D8F /* Registration.xib */; };
+		32942D9E1E8172BA000A416F /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32942D9B1E8172BA000A416F /* YLGIFImage.m */; };
+		32942D9F1E8172BA000A416F /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32942D9D1E8172BA000A416F /* YLImageView.m */; };
+		32942DA31E8173B3000A416F /* loading_players.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32942DA11E8173B3000A416F /* loading_players.gif */; };
+		32942DA41E8173B3000A416F /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32942DA21E8173B3000A416F /* splash.jpg */; };
+		32DFBC901E84C6010064D9E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DFBC8F1E84C6000064D9E0 /* CoreLocation.framework */; };
+		32DFBC921E84C6080064D9E0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DFBC911E84C6080064D9E0 /* LocalAuthentication.framework */; };
+		6B6831C21E84E930000E2965 /* Home_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6831C01E84E930000E2965 /* Home_ViewController.m */; };
+		6B6831C31E84E930000E2965 /* Home_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6831C11E84E930000E2965 /* Home_ViewController.xib */; };
+		6B6831C51E84EAC9000E2965 /* arrow_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6831C41E84EAC9000E2965 /* arrow_3x.png */; };
+		7D7F35149FEF7652732FC92A /* libPods-Clozbz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AE8902D62DDE7E418F38E2 /* libPods-Clozbz.a */; };
+		81B7519B99CADBF60DC0FF8B /* libPods-ClozbzTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF92C8A95A97B9EDF402D1C1 /* libPods-ClozbzTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +60,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03140BB0519283DBB507F757 /* Pods-Clozbz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clozbz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clozbz/Pods-Clozbz.debug.xcconfig"; sourceTree = "<group>"; };
+		052F66178C153B88745A5D83 /* Pods-ClozbzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzTests/Pods-ClozbzTests.release.xcconfig"; sourceTree = "<group>"; };
+		32089FAE1E7D5C66009B3F87 /* CRToastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastConfig.h; sourceTree = "<group>"; };
+		32089FAF1E7D5C66009B3F87 /* CRToastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastConfig.m; sourceTree = "<group>"; };
+		32089FB01E7D5C66009B3F87 /* CRToastLayoutHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastLayoutHelpers.h; sourceTree = "<group>"; };
+		32089FB11E7D5C66009B3F87 /* CRToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastManager.h; sourceTree = "<group>"; };
+		32089FB21E7D5C66009B3F87 /* CRToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastManager.m; sourceTree = "<group>"; };
+		32089FB31E7D5C66009B3F87 /* CRToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastView.h; sourceTree = "<group>"; };
+		32089FB41E7D5C66009B3F87 /* CRToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastView.m; sourceTree = "<group>"; };
+		32089FB51E7D5C66009B3F87 /* CRToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastViewController.h; sourceTree = "<group>"; };
+		32089FB61E7D5C66009B3F87 /* CRToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastViewController.m; sourceTree = "<group>"; };
+		32089FB71E7D5C66009B3F87 /* CRToastWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRToastWindow.h; sourceTree = "<group>"; };
+		32089FB81E7D5C66009B3F87 /* CRToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRToastWindow.m; sourceTree = "<group>"; };
+		32089FBF1E7D6508009B3F87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32089FC11E7D94F9009B3F87 /* Dashboard_page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dashboard_page.h; sourceTree = "<group>"; };
+		32089FC21E7D94FA009B3F87 /* Dashboard_page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dashboard_page.m; sourceTree = "<group>"; };
+		32089FC31E7D94FA009B3F87 /* Dashboard_page.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dashboard_page.xib; sourceTree = "<group>"; };
+		32089FC61E7F8B3B009B3F87 /* Clozbz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clozbz.entitlements; sourceTree = "<group>"; };
 		3230848D1E7AF20C002E1D8F /* Clozbz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clozbz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323084911E7AF20C002E1D8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		323084931E7AF20C002E1D8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +101,25 @@
 		323084D11E7B06C3002E1D8F /* Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registration.h; sourceTree = "<group>"; };
 		323084D21E7B06C3002E1D8F /* Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registration.m; sourceTree = "<group>"; };
 		323084D31E7B06C3002E1D8F /* Registration.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Registration.xib; sourceTree = "<group>"; };
+		32942D9A1E8172BA000A416F /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		32942D9B1E8172BA000A416F /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		32942D9C1E8172BA000A416F /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		32942D9D1E8172BA000A416F /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		32942DA11E8173B3000A416F /* loading_players.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_players.gif; sourceTree = "<group>"; };
+		32942DA21E8173B3000A416F /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		32DFBC8F1E84C6000064D9E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		32DFBC911E84C6080064D9E0 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		46AE8902D62DDE7E418F38E2 /* libPods-Clozbz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clozbz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E1592B7958BAC11E530273 /* Pods-Clozbz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clozbz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clozbz/Pods-Clozbz.release.xcconfig"; sourceTree = "<group>"; };
+		5D15A169B02E9E7DB100D5EC /* libPods-ClozbzUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClozbzUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6831BF1E84E930000E2965 /* Home_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home_ViewController.h; sourceTree = "<group>"; };
+		6B6831C01E84E930000E2965 /* Home_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home_ViewController.m; sourceTree = "<group>"; };
+		6B6831C11E84E930000E2965 /* Home_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home_ViewController.xib; sourceTree = "<group>"; };
+		6B6831C41E84EAC9000E2965 /* arrow_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_3x.png; sourceTree = "<group>"; };
+		C034C478E503DFFFF83EDD62 /* Pods-ClozbzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzTests/Pods-ClozbzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF92C8A95A97B9EDF402D1C1 /* libPods-ClozbzTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClozbzTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4051E4F9EADD81997358995 /* Pods-ClozbzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzUITests/Pods-ClozbzUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4346E966669254E7A93DCB2 /* Pods-ClozbzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzUITests/Pods-ClozbzUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +127,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DFBC921E84C6080064D9E0 /* LocalAuthentication.framework in Frameworks */,
+				32DFBC901E84C6010064D9E0 /* CoreLocation.framework in Frameworks */,
+				7D7F35149FEF7652732FC92A /* libPods-Clozbz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B7519B99CADBF60DC0FF8B /* libPods-ClozbzTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +145,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120FF3BE1B615B8459AC6693 /* libPods-ClozbzUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32089FAD1E7D5C19009B3F87 /* FloatLabel */ = {
+			isa = PBXGroup;
+			children = (
+				323084C81E7AFDAB002E1D8F /* UIFloatLabelTextField.h */,
+				323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */,
+			);
+			name = FloatLabel;
+			sourceTree = "<group>";
+		};
+		32089FBE1E7D5C7E009B3F87 /* CRToast */ = {
+			isa = PBXGroup;
+			children = (
+				32089FAE1E7D5C66009B3F87 /* CRToastConfig.h */,
+				32089FAF1E7D5C66009B3F87 /* CRToastConfig.m */,
+				32089FB01E7D5C66009B3F87 /* CRToastLayoutHelpers.h */,
+				32089FB11E7D5C66009B3F87 /* CRToastManager.h */,
+				32089FB21E7D5C66009B3F87 /* CRToastManager.m */,
+				32089FB31E7D5C66009B3F87 /* CRToastView.h */,
+				32089FB41E7D5C66009B3F87 /* CRToastView.m */,
+				32089FB51E7D5C66009B3F87 /* CRToastViewController.h */,
+				32089FB61E7D5C66009B3F87 /* CRToastViewController.m */,
+				32089FB71E7D5C66009B3F87 /* CRToastWindow.h */,
+				32089FB81E7D5C66009B3F87 /* CRToastWindow.m */,
+			);
+			name = CRToast;
+			sourceTree = "<group>";
+		};
 		323084841E7AF208002E1D8F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +186,8 @@
 				323084AC1E7AF20D002E1D8F /* ClozbzTests */,
 				323084B71E7AF20D002E1D8F /* ClozbzUITests */,
 				3230848E1E7AF20C002E1D8F /* Products */,
+				EDE9243D442B677F1B26D2C1 /* Pods */,
+				95415520FD5EF91BF17B26FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +204,11 @@
 		3230848F1E7AF20C002E1D8F /* Clozbz */ = {
 			isa = PBXGroup;
 			children = (
+				32089FC61E7F8B3B009B3F87 /* Clozbz.entitlements */,
 				323084C61E7AFC7E002E1D8F /* login_bg.jpg */,
+				32942DA11E8173B3000A416F /* loading_players.gif */,
+				6B6831C41E84EAC9000E2965 /* arrow_3x.png */,
+				32942DA21E8173B3000A416F /* splash.jpg */,
 				323084CB1E7AFDB1002E1D8F /* Frameworks */,
 				323084931E7AF20C002E1D8F /* AppDelegate.h */,
 				323084941E7AF20C002E1D8F /* AppDelegate.m */,
@@ -123,6 +218,12 @@
 				323084D11E7B06C3002E1D8F /* Registration.h */,
 				323084D21E7B06C3002E1D8F /* Registration.m */,
 				323084D31E7B06C3002E1D8F /* Registration.xib */,
+				32089FC11E7D94F9009B3F87 /* Dashboard_page.h */,
+				32089FC21E7D94FA009B3F87 /* Dashboard_page.m */,
+				32089FC31E7D94FA009B3F87 /* Dashboard_page.xib */,
+				6B6831BF1E84E930000E2965 /* Home_ViewController.h */,
+				6B6831C01E84E930000E2965 /* Home_ViewController.m */,
+				6B6831C11E84E930000E2965 /* Home_ViewController.xib */,
 				3230849F1E7AF20C002E1D8F /* Assets.xcassets */,
 				323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */,
 				323084A41E7AF20C002E1D8F /* Info.plist */,
@@ -161,10 +262,48 @@
 		323084CB1E7AFDB1002E1D8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				323084C81E7AFDAB002E1D8F /* UIFloatLabelTextField.h */,
-				323084C91E7AFDAB002E1D8F /* UIFloatLabelTextField.m */,
+				32089FBF1E7D6508009B3F87 /* GoogleService-Info.plist */,
+				32942DA01E8172BE000A416F /* YL_image */,
+				32089FBE1E7D5C7E009B3F87 /* CRToast */,
+				32089FAD1E7D5C19009B3F87 /* FloatLabel */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32942DA01E8172BE000A416F /* YL_image */ = {
+			isa = PBXGroup;
+			children = (
+				32942D9A1E8172BA000A416F /* YLGIFImage.h */,
+				32942D9B1E8172BA000A416F /* YLGIFImage.m */,
+				32942D9C1E8172BA000A416F /* YLImageView.h */,
+				32942D9D1E8172BA000A416F /* YLImageView.m */,
+			);
+			name = YL_image;
+			sourceTree = "<group>";
+		};
+		95415520FD5EF91BF17B26FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32DFBC911E84C6080064D9E0 /* LocalAuthentication.framework */,
+				32DFBC8F1E84C6000064D9E0 /* CoreLocation.framework */,
+				46AE8902D62DDE7E418F38E2 /* libPods-Clozbz.a */,
+				DF92C8A95A97B9EDF402D1C1 /* libPods-ClozbzTests.a */,
+				5D15A169B02E9E7DB100D5EC /* libPods-ClozbzUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE9243D442B677F1B26D2C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03140BB0519283DBB507F757 /* Pods-Clozbz.debug.xcconfig */,
+				56E1592B7958BAC11E530273 /* Pods-Clozbz.release.xcconfig */,
+				C034C478E503DFFFF83EDD62 /* Pods-ClozbzTests.debug.xcconfig */,
+				052F66178C153B88745A5D83 /* Pods-ClozbzTests.release.xcconfig */,
+				E4051E4F9EADD81997358995 /* Pods-ClozbzUITests.debug.xcconfig */,
+				E4346E966669254E7A93DCB2 /* Pods-ClozbzUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 323084BD1E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "Clozbz" */;
 			buildPhases = (
+				2A3A4AD6C180E6A5282604B6 /* [CP] Check Pods Manifest.lock */,
 				323084891E7AF208002E1D8F /* Sources */,
 				3230848A1E7AF208002E1D8F /* Frameworks */,
 				3230848B1E7AF208002E1D8F /* Resources */,
+				C9F3181A7A989903E9C42066 /* [CP] Embed Pods Frameworks */,
+				899843D3DF89D06111040105 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +333,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 323084C01E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzTests" */;
 			buildPhases = (
+				C72D4FB73B24DDA90A0C0F01 /* [CP] Check Pods Manifest.lock */,
 				323084A51E7AF20D002E1D8F /* Sources */,
 				323084A61E7AF20D002E1D8F /* Frameworks */,
 				323084A71E7AF20D002E1D8F /* Resources */,
+				D343EBB144FCDC9FB71EC78E /* [CP] Embed Pods Frameworks */,
+				3E7780737379ACB8A0429B62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +354,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 323084C31E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzUITests" */;
 			buildPhases = (
+				F5A41F511CD66C7D83D0B1BF /* [CP] Check Pods Manifest.lock */,
 				323084B01E7AF20D002E1D8F /* Sources */,
 				323084B11E7AF20D002E1D8F /* Frameworks */,
 				323084B21E7AF20D002E1D8F /* Resources */,
+				C2468D65999EDC4725E42BC5 /* [CP] Embed Pods Frameworks */,
+				9BD9C940D72678A18274F5DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,8 +382,13 @@
 				TargetAttributes = {
 					3230848C1E7AF208002E1D8F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Y959Y84N4C;
+						DevelopmentTeam = P9GVGHM5X2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					323084A81E7AF20D002E1D8F = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -276,9 +429,15 @@
 			files = (
 				323084C71E7AFC7E002E1D8F /* login_bg.jpg in Resources */,
 				323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */,
+				32089FC51E7D94FA009B3F87 /* Dashboard_page.xib in Resources */,
+				6B6831C31E84E930000E2965 /* Home_ViewController.xib in Resources */,
+				32942DA41E8173B3000A416F /* splash.jpg in Resources */,
 				323084D51E7B06C3002E1D8F /* Registration.xib in Resources */,
+				6B6831C51E84EAC9000E2965 /* arrow_3x.png in Resources */,
+				32942DA31E8173B3000A416F /* loading_players.gif in Resources */,
 				323084A01E7AF20C002E1D8F /* Assets.xcassets in Resources */,
 				3230849B1E7AF20C002E1D8F /* Main.storyboard in Resources */,
+				32089FC01E7D6508009B3F87 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,17 +457,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A3A4AD6C180E6A5282604B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E7780737379ACB8A0429B62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClozbzTests/Pods-ClozbzTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899843D3DF89D06111040105 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clozbz/Pods-Clozbz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD9C940D72678A18274F5DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClozbzUITests/Pods-ClozbzUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2468D65999EDC4725E42BC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClozbzUITests/Pods-ClozbzUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72D4FB73B24DDA90A0C0F01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F3181A7A989903E9C42066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clozbz/Pods-Clozbz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D343EBB144FCDC9FB71EC78E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClozbzTests/Pods-ClozbzTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A41F511CD66C7D83D0B1BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		323084891E7AF208002E1D8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				323084981E7AF20C002E1D8F /* ViewController.m in Sources */,
+				32089FBC1E7D5C67009B3F87 /* CRToastViewController.m in Sources */,
 				323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */,
+				32089FC41E7D94FA009B3F87 /* Dashboard_page.m in Sources */,
+				32089FBB1E7D5C67009B3F87 /* CRToastView.m in Sources */,
+				32089FB91E7D5C67009B3F87 /* CRToastConfig.m in Sources */,
 				323084D41E7B06C3002E1D8F /* Registration.m in Sources */,
+				32942D9F1E8172BA000A416F /* YLImageView.m in Sources */,
+				32942D9E1E8172BA000A416F /* YLGIFImage.m in Sources */,
 				323084CA1E7AFDAB002E1D8F /* UIFloatLabelTextField.m in Sources */,
 				323084921E7AF20C002E1D8F /* main.m in Sources */,
+				32089FBA1E7D5C67009B3F87 /* CRToastManager.m in Sources */,
+				6B6831C21E84E930000E2965 /* Home_ViewController.m in Sources */,
 				3230849E1E7AF20C002E1D8F /* Clozbz.xcdatamodeld in Sources */,
+				32089FBD1E7D5C67009B3F87 /* CRToastWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,30 +759,35 @@
 		};
 		323084BE1E7AF20D002E1D8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03140BB0519283DBB507F757 /* Pods-Clozbz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y959Y84N4C;
+				CODE_SIGN_ENTITLEMENTS = Clozbz/Clozbz.entitlements;
+				DEVELOPMENT_TEAM = P9GVGHM5X2;
 				INFOPLIST_FILE = Clozbz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JSK.Clozbz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		323084BF1E7AF20D002E1D8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E1592B7958BAC11E530273 /* Pods-Clozbz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y959Y84N4C;
+				CODE_SIGN_ENTITLEMENTS = Clozbz/Clozbz.entitlements;
+				DEVELOPMENT_TEAM = P9GVGHM5X2;
 				INFOPLIST_FILE = Clozbz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JSK.Clozbz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JSK.Clozbz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		323084C11E7AF20D002E1D8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C034C478E503DFFFF83EDD62 /* Pods-ClozbzTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClozbzTests/Info.plist;
@@ -489,6 +800,7 @@
 		};
 		323084C21E7AF20D002E1D8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052F66178C153B88745A5D83 /* Pods-ClozbzTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClozbzTests/Info.plist;
@@ -501,6 +813,7 @@
 		};
 		323084C41E7AF20D002E1D8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4051E4F9EADD81997358995 /* Pods-ClozbzUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClozbzUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -512,6 +825,7 @@
 		};
 		323084C51E7AF20D002E1D8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4346E966669254E7A93DCB2 /* Pods-ClozbzUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClozbzUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -540,6 +854,7 @@
 				323084BF1E7AF20D002E1D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		323084C01E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +863,7 @@
 				323084C21E7AF20D002E1D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		323084C31E7AF20D002E1D8F /* Build configuration list for PBXNativeTarget "ClozbzUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +872,7 @@
 				323084C51E7AF20D002E1D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

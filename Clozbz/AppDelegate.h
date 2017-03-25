@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Dashboard_page.h"
+#import "ViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@import GoogleSignIn;
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate,GIDSignInDelegate>
+{
+    BOOL tag;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
