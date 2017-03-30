@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="iVh-hK-Pai" customClass="JMOTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iVh-hK-Pai" id="dHc-Oc-1gn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smatrimony_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="HNQ-CV-4yi">
+                        <rect key="frame" x="5" y="9" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="2nq-mp-Wnm"/>
+                            <constraint firstAttribute="height" constant="25" id="mNM-Qb-PJT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-c1-gI5">
+                        <rect key="frame" x="35" y="0.0" width="277" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="HSR-er-JVh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.77557320539999997" green="0.38380120820000002" blue="0.2841303288" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Qhe-c1-gI5" firstAttribute="top" secondItem="dHc-Oc-1gn" secondAttribute="top" id="Ir4-Vn-75W"/>
+                    <constraint firstAttribute="trailing" secondItem="Qhe-c1-gI5" secondAttribute="trailing" constant="8" id="VsS-Wp-0Hq"/>
+                    <constraint firstItem="Qhe-c1-gI5" firstAttribute="leading" secondItem="HNQ-CV-4yi" secondAttribute="trailing" constant="5" id="hbW-4Q-8zL"/>
+                    <constraint firstItem="HNQ-CV-4yi" firstAttribute="leading" secondItem="dHc-Oc-1gn" secondAttribute="leading" constant="5" id="kwi-tN-I6P"/>
+                    <constraint firstItem="HNQ-CV-4yi" firstAttribute="centerY" secondItem="Qhe-c1-gI5" secondAttribute="centerY" id="zla-fn-gKy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="img" destination="HNQ-CV-4yi" id="Mx0-F0-FZn"/>
+                <outlet property="labelName" destination="Qhe-c1-gI5" id="CQq-aW-vsh"/>
+            </connections>
+            <point key="canvasLocation" x="-206" y="-94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="smatrimony_logo.png" width="250" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

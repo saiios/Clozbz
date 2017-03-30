@@ -1,4 +1,4 @@
-//
+ //
 //  Dashboard_page.m
 //  Clozbz
 //
@@ -35,18 +35,25 @@
         NSLog(@"Logout Success");
         [[GIDSignIn sharedInstance] signOut];
     }
+    user_data=[NSUserDefaults standardUserDefaults];
+    [user_data setValue:@"zipcode" forKey:@"page"];
     
     //fb
     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     [loginManager logOut];
     
-    
     //The setup code (in viewDidLoad in your view controller)
     UITapGestureRecognizer *singleFingerTap =
     [[UITapGestureRecognizer alloc] initWithTarget:self
                                             action:@selector(handleSingleTap:)];
-    [self.view addGestureRecognizer:singleFingerTap];
+    [self.location_view addGestureRecognizer:singleFingerTap];
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+
 //The event handling method
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
 {

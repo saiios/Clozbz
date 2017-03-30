@@ -17,6 +17,10 @@
 @import GoogleSignIn;
 
 @interface ViewController : UIViewController<GIDSignInUIDelegate,FBSDKLoginButtonDelegate>
+{
+    NSMutableDictionary *user_dict;
+    NSUserDefaults *user_data;
+}
 @property(weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
 @property(weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 

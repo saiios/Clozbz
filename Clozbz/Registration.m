@@ -20,7 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _Loading.image = [YLGIFImage imageNamed:@"loading_players.gif"];
-
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(handleSingleTap:)];
+    [self.view addGestureRecognizer:singleFingerTap];
+}
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
+{
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -160,7 +167,30 @@
                                 }];
 }
 
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([_username isFirstResponder])
+    {
+        [_email becomeFirstResponder];
+    }
+    else if([_email isFirstResponder])
+    {
+        [_phone becomeFirstResponder];
+    }
+    else if([_phone isFirstResponder])
+    {
+        [_password becomeFirstResponder];
+    }
+    else if([_password isFirstResponder])
+    {
+        [_confirm_password becomeFirstResponder];
+    }
+    else if([_confirm_password isFirstResponder])
+    {
+        [_confirm_password resignFirstResponder];
+    }
+    return YES;
+}
 - (IBAction)login_click:(id)sender
 {
     ViewController *menuController  =[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];

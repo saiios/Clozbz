@@ -18,6 +18,8 @@
     CLLocationManager *locationManager;
     CLLocation *currentLocation;
     BOOL map_bool;
+    NSUserDefaults *user_data;
+
 }
 @property (weak, nonatomic) IBOutlet UIView *location_view;
 @property (weak, nonatomic) IBOutlet UITextField *zipcode_tf;

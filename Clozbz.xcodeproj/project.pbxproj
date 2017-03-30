@@ -38,6 +38,11 @@
 		6B6831C21E84E930000E2965 /* Home_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6831C01E84E930000E2965 /* Home_ViewController.m */; };
 		6B6831C31E84E930000E2965 /* Home_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6831C11E84E930000E2965 /* Home_ViewController.xib */; };
 		6B6831C51E84EAC9000E2965 /* arrow_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B6831C41E84EAC9000E2965 /* arrow_3x.png */; };
+		6B7B940E1E8A337B00D32B7D /* JMOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B940C1E8A337B00D32B7D /* JMOTableViewCell.xib */; };
+		6B7B940F1E8A337B00D32B7D /* JMOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B940D1E8A337B00D32B7D /* JMOTableViewCell.m */; };
+		6B7B94121E8A350200D32B7D /* searchPopupVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7B94101E8A350200D32B7D /* searchPopupVIew.m */; };
+		6B7B94141E8A477300D32B7D /* 240_male.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B94131E8A477300D32B7D /* 240_male.png */; };
+		6B7B94161E8A4BC800D32B7D /* menu_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B94151E8A4BC800D32B7D /* menu_3x.png */; };
 		7D7F35149FEF7652732FC92A /* libPods-Clozbz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AE8902D62DDE7E418F38E2 /* libPods-Clozbz.a */; };
 		81B7519B99CADBF60DC0FF8B /* libPods-ClozbzTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF92C8A95A97B9EDF402D1C1 /* libPods-ClozbzTests.a */; };
 /* End PBXBuildFile section */
@@ -116,6 +121,13 @@
 		6B6831C01E84E930000E2965 /* Home_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home_ViewController.m; sourceTree = "<group>"; };
 		6B6831C11E84E930000E2965 /* Home_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home_ViewController.xib; sourceTree = "<group>"; };
 		6B6831C41E84EAC9000E2965 /* arrow_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_3x.png; sourceTree = "<group>"; };
+		6B7B940B1E8A337B00D32B7D /* JMOTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMOTableViewCell.h; sourceTree = "<group>"; };
+		6B7B940C1E8A337B00D32B7D /* JMOTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMOTableViewCell.xib; sourceTree = "<group>"; };
+		6B7B940D1E8A337B00D32B7D /* JMOTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMOTableViewCell.m; sourceTree = "<group>"; };
+		6B7B94101E8A350200D32B7D /* searchPopupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchPopupVIew.m; sourceTree = "<group>"; };
+		6B7B94111E8A350200D32B7D /* searchPopupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchPopupVIew.h; sourceTree = "<group>"; };
+		6B7B94131E8A477300D32B7D /* 240_male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 240_male.png; sourceTree = "<group>"; };
+		6B7B94151E8A4BC800D32B7D /* menu_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_3x.png; sourceTree = "<group>"; };
 		C034C478E503DFFFF83EDD62 /* Pods-ClozbzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzTests/Pods-ClozbzTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF92C8A95A97B9EDF402D1C1 /* libPods-ClozbzTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClozbzTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4051E4F9EADD81997358995 /* Pods-ClozbzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClozbzUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClozbzUITests/Pods-ClozbzUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +221,8 @@
 				32942DA11E8173B3000A416F /* loading_players.gif */,
 				6B6831C41E84EAC9000E2965 /* arrow_3x.png */,
 				32942DA21E8173B3000A416F /* splash.jpg */,
+				6B7B94151E8A4BC800D32B7D /* menu_3x.png */,
+				6B7B94131E8A477300D32B7D /* 240_male.png */,
 				323084CB1E7AFDB1002E1D8F /* Frameworks */,
 				323084931E7AF20C002E1D8F /* AppDelegate.h */,
 				323084941E7AF20C002E1D8F /* AppDelegate.m */,
@@ -224,6 +238,11 @@
 				6B6831BF1E84E930000E2965 /* Home_ViewController.h */,
 				6B6831C01E84E930000E2965 /* Home_ViewController.m */,
 				6B6831C11E84E930000E2965 /* Home_ViewController.xib */,
+				6B7B940B1E8A337B00D32B7D /* JMOTableViewCell.h */,
+				6B7B940C1E8A337B00D32B7D /* JMOTableViewCell.xib */,
+				6B7B940D1E8A337B00D32B7D /* JMOTableViewCell.m */,
+				6B7B94101E8A350200D32B7D /* searchPopupVIew.m */,
+				6B7B94111E8A350200D32B7D /* searchPopupVIew.h */,
 				3230849F1E7AF20C002E1D8F /* Assets.xcassets */,
 				323084A11E7AF20C002E1D8F /* LaunchScreen.storyboard */,
 				323084A41E7AF20C002E1D8F /* Info.plist */,
@@ -428,15 +447,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				323084C71E7AFC7E002E1D8F /* login_bg.jpg in Resources */,
+				6B7B94161E8A4BC800D32B7D /* menu_3x.png in Resources */,
 				323084A31E7AF20C002E1D8F /* LaunchScreen.storyboard in Resources */,
 				32089FC51E7D94FA009B3F87 /* Dashboard_page.xib in Resources */,
 				6B6831C31E84E930000E2965 /* Home_ViewController.xib in Resources */,
+				6B7B94141E8A477300D32B7D /* 240_male.png in Resources */,
 				32942DA41E8173B3000A416F /* splash.jpg in Resources */,
 				323084D51E7B06C3002E1D8F /* Registration.xib in Resources */,
 				6B6831C51E84EAC9000E2965 /* arrow_3x.png in Resources */,
 				32942DA31E8173B3000A416F /* loading_players.gif in Resources */,
 				323084A01E7AF20C002E1D8F /* Assets.xcassets in Resources */,
 				3230849B1E7AF20C002E1D8F /* Main.storyboard in Resources */,
+				6B7B940E1E8A337B00D32B7D /* JMOTableViewCell.xib in Resources */,
 				32089FC01E7D6508009B3F87 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,9 +625,11 @@
 				323084981E7AF20C002E1D8F /* ViewController.m in Sources */,
 				32089FBC1E7D5C67009B3F87 /* CRToastViewController.m in Sources */,
 				323084951E7AF20C002E1D8F /* AppDelegate.m in Sources */,
+				6B7B94121E8A350200D32B7D /* searchPopupVIew.m in Sources */,
 				32089FC41E7D94FA009B3F87 /* Dashboard_page.m in Sources */,
 				32089FBB1E7D5C67009B3F87 /* CRToastView.m in Sources */,
 				32089FB91E7D5C67009B3F87 /* CRToastConfig.m in Sources */,
+				6B7B940F1E8A337B00D32B7D /* JMOTableViewCell.m in Sources */,
 				323084D41E7B06C3002E1D8F /* Registration.m in Sources */,
 				32942D9F1E8172BA000A416F /* YLImageView.m in Sources */,
 				32942D9E1E8172BA000A416F /* YLGIFImage.m in Sources */,

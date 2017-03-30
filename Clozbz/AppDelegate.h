@@ -10,12 +10,13 @@
 #import <CoreData/CoreData.h>
 #import "Dashboard_page.h"
 #import "ViewController.h"
-
+//test commit
 @import GoogleSignIn;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,GIDSignInDelegate>
 {
     BOOL tag;
+    NSUserDefaults *user_data;
 }
 @property (strong, nonatomic) UIWindow *window;
 

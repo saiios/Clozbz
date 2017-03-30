@@ -113,6 +113,17 @@ didSignInForUser:(GIDGoogleUser *)user
                  {
                      NSLog(@"%@",user.uid);
                      
+                     NSString *name=[NSString stringWithFormat:@"%@",user.displayName];
+                     NSString *email=[NSString stringWithFormat:@"%@",user.email];
+                     NSString *photo=[NSString stringWithFormat:@"%@",user.photoURL];
+                     NSString *user_id=[NSString stringWithFormat:@"%@",user.uid];
+                     
+                     user_data=[NSUserDefaults standardUserDefaults];
+                     [user_data setValue:name forKey:@"name"];
+                     [user_data setValue:email forKey:@"email"];
+                     [user_data setValue:photo forKey:@"photo"];
+                     [user_data setValue:user_id forKey:@"id"];
+                     
                      Dashboard_page *menuController  =[[Dashboard_page alloc]initWithNibName:@"Dashboard_page" bundle:nil];
                      UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:menuController];
                      self.window.rootViewController =nil;

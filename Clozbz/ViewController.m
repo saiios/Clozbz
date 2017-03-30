@@ -18,6 +18,18 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    user_data=[NSUserDefaults standardUserDefaults];
+    NSString *page=[user_data valueForKey:@"page"];
+    
+    if ([page isEqualToString:@"home"])
+    {
+        Home_ViewController *menuController  =[[Home_ViewController alloc]initWithNibName:@"Home_ViewController" bundle:nil];
+        [self.navigationController pushViewController:menuController animated:YES];
+    }
+    else if ([page isEqualToString:@"zipcode"])
+    {
+        [self Go_To_Dashboard_page];
+    }
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
 }
@@ -31,7 +43,7 @@
 
     [self.email_tf setValue:[UIFont fontWithName: @"Arial" size: 18] forKeyPath:@"_placeholderLabel.font"];
     [self.pwd_tf setValue:[UIFont fontWithName: @"Arial" size: 18] forKeyPath:@"_placeholderLabel.font"];
-    
+    user_dict=[[NSMutableDictionary alloc]init];
     //gmail
    
     //signin
@@ -77,6 +89,17 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                  NSLog(@"%@",user.uid);
                  NSLog(@"%@",user.email);
                  _Loading.hidden=YES;
+
+                 NSString *name=[NSString stringWithFormat:@"%@",user.displayName];
+                 NSString *email=[NSString stringWithFormat:@"%@",user.email];
+                 NSString *photo=[NSString stringWithFormat:@"%@",user.photoURL];
+                 NSString *user_id=[NSString stringWithFormat:@"%@",user.uid];
+
+                 user_data=[NSUserDefaults standardUserDefaults];
+                 [user_data setValue:name forKey:@"name"];
+                 [user_data setValue:email forKey:@"email"];
+                 [user_data setValue:photo forKey:@"photo"];
+                 [user_data setValue:user_id forKey:@"id"];
 
                  [self Go_To_Dashboard_page];
              }
@@ -176,7 +199,18 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                     NSLog(@"Completed");
                                 }];
 }
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([_email_tf isFirstResponder])
+    {
+        [_pwd_tf becomeFirstResponder];
+    }
+    else if([_pwd_tf isFirstResponder])
+    {
+        [_pwd_tf resignFirstResponder];
+    }
+    return YES;
+}
 -(void)User_Login
 {
     [[FIRAuth auth]
@@ -189,6 +223,18 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
          {
              NSLog(@"user data %@",user);
              [self Alert:@"Login Success!"];
+             
+             NSString *name=[NSString stringWithFormat:@"%@",user.displayName];
+             NSString *email=[NSString stringWithFormat:@"%@",user.email];
+             NSString *photo=[NSString stringWithFormat:@"%@",user.photoURL];
+             NSString *user_id=[NSString stringWithFormat:@"%@",user.uid];
+             
+             user_data=[NSUserDefaults standardUserDefaults];
+             [user_data setValue:name forKey:@"name"];
+             [user_data setValue:email forKey:@"email"];
+             [user_data setValue:photo forKey:@"photo"];
+             [user_data setValue:user_id forKey:@"id"];
+             
              [self Go_To_Dashboard_page];
          }
          else
@@ -197,7 +243,6 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
              NSLog(@"%@",error);
          }
          _Loading.hidden=YES;
-
      }];
 }
 
