@@ -20,7 +20,8 @@
 {
     user_data=[NSUserDefaults standardUserDefaults];
     NSString *page=[user_data valueForKey:@"page"];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+
     if ([page isEqualToString:@"home"])
     {
         Home_ViewController *menuController  =[[Home_ViewController alloc]initWithNibName:@"Home_ViewController" bundle:nil];
@@ -30,7 +31,7 @@
     {
         [self Go_To_Dashboard_page];
     }
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
     [super viewWillAppear:animated];
 }
 
