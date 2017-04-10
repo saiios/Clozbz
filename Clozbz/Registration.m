@@ -72,6 +72,7 @@
          {
              NSLog(@"user data %@",user);
              [self Alert:@"Registration Success!"];
+             [self.navigationController popViewControllerAnimated:YES];
          }
          else
          {

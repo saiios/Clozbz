@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>818930212834-r58ds98osj14ba6tqrh6bbj2285gqa5j.apps.googleusercontent.com</string>
+	<string>512043512487-kobt41m9vdktjj1i336uuthue5p7ggrk.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.818930212834-r58ds98osj14ba6tqrh6bbj2285gqa5j</string>
+	<string>com.googleusercontent.apps.512043512487-kobt41m9vdktjj1i336uuthue5p7ggrk</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAS4mGwykdwQ5Yn6TekUB-yAc6mWk13pMs</string>
+	<string>AIzaSyA-81kjXrUg5z4EAi3fXO-0jYlKLzMspHw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>818930212834</string>
+	<string>512043512487</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.JSK.Clozbz</string>
 	<key>PROJECT_ID</key>
-	<string>clozbyers-ios-app</string>
+	<string>clozbyers</string>
 	<key>STORAGE_BUCKET</key>
-	<string>clozbyers-ios-app.appspot.com</string>
+	<string>clozbyers.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:818930212834:ios:53331dc888a303e8</string>
+	<string>1:512043512487:ios:53331dc888a303e8</string>
 	<key>DATABASE_URL</key>
-	<string>https://clozbyers-ios-app.firebaseio.com</string>
+	<string>https://clozbyers.firebaseio.com</string>
 </dict>
 </plist>

@@ -50,6 +50,8 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Add post image</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

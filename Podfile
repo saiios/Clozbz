@@ -11,6 +11,7 @@ target 'Clozbz' do
    pod 'Firebase/Core'
    pod 'Firebase/Database'
    pod 'Firebase/Auth'
+   pod 'FirebaseStorage'
    pod 'GoogleSignIn'
 pod "FBSDKCoreKit";
 pod "FBSDKLoginKit";
